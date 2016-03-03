@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class Program
 {
-CurrentHealth= >=MaximumHealth
+CurrentHealth=MaximumHealth
 if CurrentHealth >= 0, //if not continue,
 then Console.Writeline"You are mostly possible dead ",
 MaximumHealth=1000
@@ -21,9 +21,6 @@ a = acceleration
 t = time
 //* to reach max speed it would take 15 seconds
 
-CurrentPitch(-30 & 30){
-if CurrentPitch= x cos 30
-else CurrentPitch= -x cos 30
-}
-CurrentYaw=
+CurrentPitch= ClampValue(-30 & 30){
+CurrentYaw=ClapmpValue(-179 & 179)}
 Points= 
