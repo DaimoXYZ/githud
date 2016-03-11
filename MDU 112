@@ -13,8 +13,10 @@ public class PlayerCore {
         return from + percent * (from - to);
     }
 
-    public float ClampValue(float minSpeed, float maxspeed);
-
+    public float ClampValue(float minSpeed, float maxSpeed);
+    float minSpeed=1.00f;
+    float maxSpeed=5.00;
+    
     public float UpdatePlayer(){
     float CurrentPitch=ClampValue(Vertimp,-1,1) ;
     float CurrentYaw=ClampValue(Horzimp,-1,1) ;
@@ -29,7 +31,7 @@ public class PlayerCore {
     public void HitObstacle(float impact)
     {
      float CurrentHealth= speedFactor-MaxiumHealth;
-     float impact = minSpeed;
+     float impact = minSpeed-SpeedFactor;
           
     }
 
